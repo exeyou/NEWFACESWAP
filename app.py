@@ -51,7 +51,7 @@ def check_result(request_id):
         'Content-Type': 'application/x-www-form-urlencoded'
     }
 
-    time.sleep(3)  # Consider using a more robust approach for waiting, like polling
+    time.sleep(2)  # Consider using a more robust approach for waiting, like polling
 
     response = requests.post(RESULT_URL, data=payload, headers=headers)
 
@@ -68,3 +68,4 @@ def check_result(request_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
