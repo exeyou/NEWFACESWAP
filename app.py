@@ -12,7 +12,7 @@ RESULT_URL = "https://api.magicapi.dev/api/v1/capix/faceswap/result/"
 def upload_form():
     return render_template('upload_form.html')
 
-@app.route('/swap', methods=['POST'])
+@app.route('/swap')
 def face_swap():
     target_url = request.form.get('target_url')
     swap_url = request.form.get('swap_url')
